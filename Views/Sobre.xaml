@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Sobre"
+             Title="Sobre"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource Black}">
+    
+    <VerticalStackLayout
+        VerticalOptions="CenterAndExpand"
+                         Padding="10"
+                         Spacing="10">
+
+        <Frame Padding="10"
+               BackgroundColor="{StaticResource Magenta}">
+            <VerticalStackLayout>
+                <Label 
+                    Text="Sobre"
+                    FontSize="30"
+                    TextColor="{StaticResource White}" 
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" />
+            </VerticalStackLayout>
+        </Frame>
+
+
+        <Frame>
+            <VerticalStackLayout>
+        <Label Text="Desenvolvido por Laerte Barbosa"
+               TextColor="{StaticResource Black}"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"></Label>
+
+        <Label Text="Email: laerte.barbosa@etec.sp.gov.br"
+               TextColor="{StaticResource Black}"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"></Label>
+
+        <Label Text="Versão: 1.0"
+               TextColor="{StaticResource Black}"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"></Label>
+
+        <Label Text="© Copyright 2024"
+               TextColor="{StaticResource Black}"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"></Label>
+            </VerticalStackLayout>
+        </Frame>    
+            
+    </VerticalStackLayout>
+</ContentPage>
