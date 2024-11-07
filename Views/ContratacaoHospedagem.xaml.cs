@@ -7,8 +7,8 @@ public partial class ContratacaoHospedagem : ContentPage
     App PropriedadesApp;
 
     public ContratacaoHospedagem()
-	{
-		InitializeComponent();
+    {
+        InitializeComponent();
 
         PropriedadesApp = (App)Application.Current;
 
@@ -67,10 +67,36 @@ public partial class ContratacaoHospedagem : ContentPage
         {
             Navigation.PushAsync(new HospedagemContratada());
 
-        }catch (Exception ex)
+        }
+        catch (Exception ex)
         {
             DisplayAlert("Ops", ex.Message, "Ok");
         }
 
+    }
+
+    private void Button_Clicked_2(object sender, EventArgs e)
+    {
+        try
+        {
+            Navigation.PushAsync(new Suites());
+
+        }
+        catch (Exception ex)
+        {
+            DisplayAlert("Ops", ex.Message, "Ok");
+        }
+    }
+    private void Button_Clicked_3(object sender, EventArgs e)
+    {
+        try
+        {
+            Navigation.PushAsync(new Mapa());
+
+        }
+        catch (Exception ex)
+        {
+            DisplayAlert("Ops", ex.Message, "Ok");
+        }
     }
 }

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Mapa"
+             Title="Mapa"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource Black}">
+
+    <VerticalStackLayout
+        VerticalOptions="CenterAndExpand"
+                         Padding="10"
+                         Spacing="10">
+
+        <Frame Padding="10"
+               BackgroundColor="{StaticResource Magenta}">
+            <VerticalStackLayout>
+                <Label 
+                    Text="Onde está localizado?"
+                    FontSize="20"
+                    TextColor="{StaticResource White}" 
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" />
+            </VerticalStackLayout>
+        </Frame>
+
+
+        <Frame>
+            <VerticalStackLayout>
+                <Label
+                        Text="Nosso hotel está localizado na Ilha de Martim Vaz, 49 km adiante da Ilha de Trindade. Por ser a ilha brasileira mais distante da costa do Brasil, garantimos aos nossos clientes uma experiência completa de solidão e o mais completo isolamento."
+                        LineBreakMode="WordWrap"
+                        HorizontalOptions="CenterAndExpand"
+                        TextColor="{StaticResource Primary}"
+                        FontSize="12"
+                        Margin="0"/>
+
+                <Image  Source="mapa_localizacao.jpg"
+                        Aspect="AspectFit"
+                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="CenterAndExpand"/>
+
+                <Label
+                        Text="Localização no Google Maps"
+                        TextColor="{StaticResource Primary}"
+                        FontSize="Medium"
+                        Margin="10"
+                        HorizontalOptions="Center"
+                        HorizontalTextAlignment="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                    </Label.GestureRecognizers>
+                    
+                </Label>
+            </VerticalStackLayout>
+        </Frame>
+
+        <Button Text="Voltar" Clicked="Button_Clicked"
+                        WidthRequest="100"
+                        HorizontalOptions="End"
+                        BackgroundColor="{StaticResource Magenta}"/>
+
+    </VerticalStackLayout>
+</ContentPage>

@@ -46,7 +46,13 @@
                VerticalOptions="Center"
                HorizontalOptions="Center"></Label>
             </VerticalStackLayout>
-        </Frame>    
-            
+        </Frame>
+
+        <Button Text="Voltar" Clicked="Button_Clicked"
+                        Padding="10"
+                        WidthRequest="100"
+                        HorizontalOptions="End"
+                        BackgroundColor="{StaticResource Magenta}"/>
+
     </VerticalStackLayout>
 </ContentPage>

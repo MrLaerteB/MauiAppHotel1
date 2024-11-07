@@ -60,7 +60,7 @@
 
         <Button Text="Voltar"
                 HorizontalOptions="Center"
-                Clicked="Button_Clicked" />
+                Clicked="Button_Clicked_1" />
 
     </VerticalStackLayout>
 </ContentPage>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Suites"
+             Title="Suites"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource Black}">
+
+    <ScrollView>
+        
+    <VerticalStackLayout
+        VerticalOptions="CenterAndExpand"
+                         Padding="10"
+                         Spacing="10">
+
+        <Frame Padding="10"
+               BackgroundColor="{StaticResource Magenta}">
+            <VerticalStackLayout>
+                <Label 
+                    Text="Conheça nossas suítes:"
+                    FontSize="20"
+                    TextColor="{StaticResource White}" 
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" />
+            </VerticalStackLayout>
+        </Frame>
+
+
+        <Frame>
+            <VerticalStackLayout>
+                <Label Text="Suíte Super Luxo" Margin="10"
+               TextColor="{StaticResource Magenta}"
+               FontSize="20"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"></Label>
+
+            <Image  Source="sl.jpg"
+                    Aspect="AspectFill"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand"/>
+
+            <Label Text="Espaço amplo, camas kingsize, sala de suporte, ar condicionado, banheira, frigobar, TV 50'', controle geral por voz, janela ultrawide com vista para paisagem desconcertante."
+                    LineBreakMode="WordWrap"
+                    HorizontalOptions="CenterAndExpand"
+                    TextColor="{StaticResource Primary}"
+                    FontSize="12"
+                    Margin="0"></Label>
+            </VerticalStackLayout>
+        </Frame>
+
+            <Button Text="Voltar" Clicked="Button_Clicked"
+                        WidthRequest="70"
+                        FontSize="10"
+                        HorizontalOptions="End"
+                        BackgroundColor="{StaticResource Magenta}"/>
+
+            <Frame>
+                <VerticalStackLayout>
+                    <Label Text="Suíte Luxo" Margin="10"
+               TextColor="{StaticResource Magenta}"
+               FontSize="20"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"></Label>
+
+                    <Image  Source="lx.jpg"
+                    Aspect="AspectFill"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand"/>
+
+                    <Label Text="Bom espaço, camas confortáveis, ar condicionado, frigobar, TV 42'', controle geral por controle remoto, janela grande com vista para paisagem linda."
+                    LineBreakMode="WordWrap"
+                    HorizontalOptions="CenterAndExpand"
+                    TextColor="{StaticResource Primary}"
+                    FontSize="12"
+                    Margin="0"></Label>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Button Text="Voltar" Clicked="Button_Clicked"
+                        WidthRequest="70"
+                        FontSize="10"
+                        HorizontalOptions="End"
+                        BackgroundColor="{StaticResource Magenta}"/>
+
+            <Frame>
+                <VerticalStackLayout>
+                    <Label Text="Suíte Single" Margin="10"
+               TextColor="{StaticResource Magenta}"
+               FontSize="20"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"></Label>
+
+                    <Image  Source="simp.jpg"
+                    Aspect="AspectFill"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand"/>
+
+                    <Label Text="Espaço otimizado, camas ok, ventiladores, TV 32'', controle geral por painel, janela com vista para paisagem bonita."
+                    LineBreakMode="WordWrap"
+                    HorizontalOptions="CenterAndExpand"
+                    TextColor="{StaticResource Primary}"
+                    FontSize="12"
+                    Margin="0"></Label>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Button Text="Voltar" Clicked="Button_Clicked"
+                        WidthRequest="70"
+                        FontSize="10"
+                        HorizontalOptions="End"
+                        BackgroundColor="{StaticResource Magenta}"/>
+
+            <Frame>
+                <VerticalStackLayout>
+                    <Label Text="Suíte Crise" Margin="10"
+               TextColor="{StaticResource Magenta}"
+               FontSize="20"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"></Label>
+
+                    <Image  Source="crise.jpg"
+                    Aspect="AspectFill"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand"/>
+
+                    <Label Text="Espaço diminuto, camas retrô, leques, TV 14'', controle geral por interruptores, janela com vista para paisagem aleatória."
+                    LineBreakMode="WordWrap"
+                    HorizontalOptions="CenterAndExpand"
+                    TextColor="{StaticResource Primary}"
+                    FontSize="12"
+                    Margin="0"></Label>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Button Text="Voltar" Clicked="Button_Clicked"
+                        WidthRequest="70"
+                        FontSize="10"
+                        HorizontalOptions="End"
+                        BackgroundColor="{StaticResource Magenta}"/>
+
+    </VerticalStackLayout>
+        
+    </ScrollView>
+</ContentPage>
